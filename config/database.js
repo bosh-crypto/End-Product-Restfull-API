@@ -5,8 +5,7 @@ other = new Sequelize(`${process.env.MYSQL_DB}`, `${process.env.DB_USER}`, `${pr
   dialect: "mysql",
   dialectOptions: options,
   pool: poolOption,
-    });
-
+});
 const pool = createPool({
   port: process.env.DB_PORT,
   host:process.env.DB_HOST,
