@@ -2,7 +2,6 @@ const { createUser, getUsers , getUsersByUserId ,UpdateUser, deleteUser , login}
 const router = require("express").Router();
 const { checktoken } = require ("../auth/token_validation")
 
-
 router.post("/" ,checktoken, createUser);
 router.get("/",checktoken,getUsers);
 router.get("/:id",checktoken, getUsersByUserId);
